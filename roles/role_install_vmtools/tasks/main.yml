@@ -11,3 +11,10 @@
     path: /Escritorio/demo_carpeta/archivo_vacio.txt
     state: touch
     mode: '0644'
+
+- name: Add a line to a file if the file does not exist, without passing regexp
+  become: true
+  lineinfile:
+    path: /Escritorio/demo_carpeta/archivo_vacio.txt
+    line: mi primer texto desde ansible
+    create: yes
