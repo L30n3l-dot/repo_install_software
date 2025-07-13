@@ -4,3 +4,10 @@
     path: /Escritorio/demo_carpeta
     state: directory
     mode: '0770'
+
+- name: crear un archivo vacio (equivalent to 0644)
+  become: true
+  file:
+    path: /Escritorio/demo_carpeta/archivo_vacio.txt
+    state: touch
+    mode: '0644'
