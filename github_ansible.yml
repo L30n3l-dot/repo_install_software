@@ -1,0 +1,7 @@
+- name: PlayBook Maestro de Programas Producto
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - include_role:
+        name: install_vmtools
