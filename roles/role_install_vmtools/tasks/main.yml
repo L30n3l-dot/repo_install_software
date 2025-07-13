@@ -1,0 +1,6 @@
+- name: Crear una carpeta
+  become: true
+  file:
+    path: /Escritorio/demo_carpeta
+    state: directory
+    mode: '0770'
