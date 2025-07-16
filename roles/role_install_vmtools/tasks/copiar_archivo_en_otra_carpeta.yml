@@ -3,10 +3,10 @@
   copy:
     path: 
      src: /Escritorio/demo_carpeta/archivo_vacio.txt 
-        dest: /home/  # Ruta de destino en el host remoto
-        mode: '0644'  # Opcional: permisos del archivo
+        dest: /home/  
+        mode: '0644'  
 
 - name: Verificar si el archivo existe
   stat:
     path: /home/archivo_vacio.txt
-  register: existe el archivo        
+     register: existe el archivo        
