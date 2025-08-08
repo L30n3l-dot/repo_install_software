@@ -6,22 +6,22 @@
     mode: '0770'
   tags: ejercicio1  
 
-- name: crear un archivo vacio (equivalent to 0644)
-  become: true
-  file:
-    path: /Escritorio/demo_carpeta/archivo_vacio.txt
-    state: touch
-    mode: '0644'
-  tags: ejercicio1
+# - name: crear un archivo vacio (equivalent to 0644)
+#   become: true
+#   file:
+#     path: /Escritorio/demo_carpeta/archivo_vacio.txt
+#     state: touch
+#     mode: '0644'
+#   tags: ejercicio1
 
-- name: Add a line to a file if the file does not exist, without passing regexp
-  become: true
-  lineinfile:
-    path: /Escritorio/demo_carpeta/archivo_vacio.txt
-    line: mi primer texto desde ansible
-    create: yes
-  tags: ejercicio1  
+# - name: Add a line to a file if the file does not exist, without passing regexp
+#   become: true
+#   lineinfile:
+#     path: /Escritorio/demo_carpeta/archivo_vacio.txt
+#     line: mi primer texto desde ansible
+#     create: yes
+#   tags: ejercicio1  
 
 - name: incluir tarea de copiado
-  include_tasks: copiar_archivo_en_otra_carpeta.yml  
+  include_tasks: copiar_archivo.yml  
   tags: ejercicio2  
