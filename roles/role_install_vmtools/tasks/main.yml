@@ -4,7 +4,7 @@
     path: /Escritorio/demo_carpeta
     state: directory
     mode: '0770'
-  tags: ejercicio1  
+  #tags: ejercicio1  
 
 # - name: crear un archivo vacio (equivalent to 0644)
 #   become: true
@@ -24,4 +24,4 @@
 
 - name: incluir tarea de copiado
   include_tasks: copiar_archivo.yml  
-  tags: ejercicio2  
+  #tags: ejercicio2  
