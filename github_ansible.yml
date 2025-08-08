@@ -1,6 +1,6 @@
 - name: PlayBook Maestro de Programas Producto
   hosts: all
-  gather_facts: false
+  gather_facts: true
 
   tasks:
     - include_role:
